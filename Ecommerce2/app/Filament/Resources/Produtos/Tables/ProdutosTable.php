@@ -15,6 +15,12 @@ class ProdutosTable
     {
         return $table
             ->columns([
+                TextColumn::make('nome')
+                    ->searchable(),
+                TextColumn::make('marca')
+                    ->searchable(),
+                TextColumn::make('estoque')
+                    ->searchable(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

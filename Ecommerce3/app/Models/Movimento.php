@@ -4,13 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Produto extends Model
+class Movimento extends Model
 {
     protected $fillable = [
-        'nome', 'marca', 'estoque',
+        'nome', 'marca', 'estoque'
     ];
 
-    public function movimento(){
+    public function Movimentos(){
         return $this->hasMany(Movimento::class);
     }
 }

@@ -22,8 +22,6 @@ class MovimentoResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $recordTitleAttribute = 'no';
-
     public static function form(Schema $schema): Schema
     {
         return MovimentoForm::configure($schema);

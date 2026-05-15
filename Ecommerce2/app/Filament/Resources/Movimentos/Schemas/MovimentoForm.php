@@ -18,7 +18,7 @@ class MovimentoForm
                 TextInput::make('quantidade')
                     ->required()
                     ->numeric(),
-                TextInput::make('tipo')
+                Select::make('tipo')
                     ->options(['entrada' => 'Entrada', 'saida' => 'Saida'])
                     ->required(),
             ]);
